@@ -13,22 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'  # Caches node_modules based on lock file
-
-      - name: Cache Node Modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm  # Path to cache
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}  # Cache key
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: Install Dependencies
-        run: npm install
+        run: npm upgrade && npm install
         
       - name: Run E2E Tests Desktop
         uses: cypress-io/github-action@v6
