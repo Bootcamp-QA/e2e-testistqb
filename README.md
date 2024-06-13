@@ -34,5 +34,4 @@ Execute node comand in a terminal: npm i
 
 
 ## Autora
-
 Reyes Cuesta: https://www.linkedin.com/in/reyescuesta
