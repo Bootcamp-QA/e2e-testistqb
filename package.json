@@ -4,6 +4,7 @@
   "description": "This project is meant to be a kind of template to start working with Cucumber and Cypress just cloning the project.",
   "main": "index.js",
   "scripts": {
+    "start": "npm install",
     "e2e-desktop": "cypress open --e2e --browser chrome",
     "e2e-mobile": "cypress open --e2e --config viewportWidth=375,viewportHeight=667",
     "e2e-desktop-ci": "cypress run --spec cypress/e2e/features/* --record",
