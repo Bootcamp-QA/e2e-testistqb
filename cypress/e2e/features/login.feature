@@ -6,7 +6,7 @@ Feature: Login Bootcamp QA
         Given the user is at bootcamp qa login page
 
     Scenario: Success Login
-        When the user login with user "testqa" and password "Password-qa"
+        When the user login with user "testqa" and password "Password-qa1"
         Then the user with name "Test QA" is logged in
 
     Scenario Outline: Error Login
