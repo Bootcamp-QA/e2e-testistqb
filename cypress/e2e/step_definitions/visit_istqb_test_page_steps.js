@@ -5,7 +5,7 @@ import {
   } from "@badeball/cypress-cucumber-preprocessor";
 
 
-  Given("the student visit istqb test page", () => {
+  Given("the student is on the ISTQB exam page", () => {
     //Visitar una pagina web diferente a la que este en base url
     //cy.visit("https://bootcampqa.com/");
 
