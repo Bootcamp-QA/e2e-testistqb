@@ -1,0 +1,22 @@
+{
+    "files.autoSave": "afterDelay",
+    "explorer.confirmDelete": false,
+    "cucumber.parameterTypes": [],
+    "cucumber.glue": [
+        
+        "src/test/**/*.js",
+        "steps_definitions/**/*.js",
+        "tests/**/*.js",
+        "*specs*/**/*.js",
+        "steps_definitions/**/*.js",
+        "cypress/e2e/step_definitions/*.{js,ts}",
+        "steps_definitions/**/*.js",
+        "*steps_definitions*/**/*.js"
+    ],
+    "cucumber.features": [
+        "src/test/**/*.feature",
+        "features/**/*.feature",
+        "tests/**/*.feature",
+        "*specs*/**/*.feature"
+    ]
+}

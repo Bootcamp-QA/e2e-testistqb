@@ -2,6 +2,7 @@ import {
     Given,
     When,
     Then,
+    And,
   } from "@badeball/cypress-cucumber-preprocessor";
 
 
@@ -29,4 +30,17 @@ import {
 
   }); 
 
+  When('the user answers questions:', (dataTable) => {
 
+    dataTable.hashes().forEach(element => {
+      //aqui dentro va el codigo que quieres que se repita por cada elemento del array
+      //element. el nombre que hayais puesto en el feature a la columna de la tabla
+      cy.get('[data-cy="question'+element.questionNumber+'"]').select(element.selectedAnswer);
+      
+      
+    });
+
+  }); 
+When('the user press button finish test', () => {
+  // Write code here that turns the phrase above into concrete actions
+})
